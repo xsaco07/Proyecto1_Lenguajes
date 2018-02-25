@@ -1,0 +1,26 @@
+SERVIDOR
+--------
+
+->socket() Apertura de un socket. Devuelve un descriptor de fichero
+
+->bind() Avisar al sistema operativo de que hemos abierto un socke. Es en esta llamada cuando se debe indicar el número de servicio al que se quiere atender
+
+->listen() para avisar al sistema de que comience a atender dicha conexión de red
+
+->accept() para indicar al sistema operativo que nos dé al siguiente cliente de la cola. Si no hay clientes se quedará bloqueada hasta que algún cliente se conecte.
+
+->write() y read() Escribir y recibir datos del cliente
+
+->close() Cierre de la comunicación y del socket
+
+
+CLIENTE
+-------
+
+->socket() Apertura de un socket
+
+-> connect() Solicitar conexión. En esta llamada se debe facilitar la dirección IP del servidor y el número de servicio que se desea.
+
+->write() y read() Escribir y recibir datos del servidor
+
+->close() Cierre de la comunicación y del socket
